@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="reset/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/alk-rounded-mtav-med/css/alk-rounded-mtav-med.min.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="გადამზიდიკომპანიები.css">
+	<link rel="stylesheet" type="text/css" href="გადამზიდიკომპანიები.html">
+  <link rel="stylesheet" type="text/css" href="contact.html">
+
+	<title>LISTS.GE</title>
+</head>
+<body>
+	<!-- HEADER START -->
+	  <header class="header">
+		<div class="second-box">
+			<img class="img1" src="img/map (4).png">	
+			<div class="second-box-text">
+			<a href="index.html">მთავარი</a>
+            <a href="#News">სიახლეები</a>
+            <a href="#ProductAdd">ობიექტის დამატება</a>
+            <a href="#AboutOus">ჩვენს შესახებ</a>
+            <a href="Contact">კონტაქტი</a>
+            
+            
+        </div>
+     </div>
+</header>
+
+    <!-- HEADER OVER -->
+    <!-- SLIDE SHOW START -->
+    
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="img/Screenshot_6.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img/Screenshot_7.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img/Screenshot_8.png" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center;display: none;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+    <!--SLIDE SHOW OVER  -->
+    <!-- LOCATION ADD PRICE TABLE START -->
+    <h2 class="ProductAdd-text">აირჩიეთ თქვენთვის საურველი კატეგორია</h2>
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">დაბალი</li>
+    <li class="grey"> 9.99 ლ/ თვე</li>
+    <li>ფოტო სურათები</li>
+    <li>დარეკვის ღილაკი</li>
+    <li>ელ ფოსტა</li>
+    <li class="grey"><a href="#" class="button">ობიექტის დამატება</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#2072c3">საშუალო</li>
+    <li class="grey"> 24.99  / თვე</li>
+    <li>ფოტო სურათები</li>
+    <li>დარეკვის ღილაკი</li>
+    <li>ელ ფოსტა</li>
+    <li>საიტზე გადასვლა</li>
+    <li class="grey"><a href="#" class="button">ობიექტის დამატება</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header2">მაღალი</li>
+    <li class="grey"> 49.99 ლ / თვე</li>
+    <li>ფოტო სურათები</li>
+    <li>დარეკვის ღილაკი</li>
+    <li>ელ ფოსტა</li>
+    <li>საიტზე გადასვლა</li>
+    <li>დარეკვის ღილაკი</li>
+    <li class="grey"><a href="#" class="button">ობიექტის დამატება</a></li>
+  </ul>
+</div>
+   <!-- LOCATION ADD PRICE TABLE OVER -->
+    
+
+</body>
+</html>

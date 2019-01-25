@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="reset/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/alk-rounded-mtav-med/css/alk-rounded-mtav-med.min.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="productadd.html">
+	<link rel="stylesheet" type="text/css" href="გადამზიდიკომპანიები.html">
+  <link rel="stylesheet" type="text/css" href="searchfilter.html">
+
+	<title>LISTS.GE</title>
+</head>
+<body>
+	<!-- HEADER START -->
+	  <header class="header">
+		<div class="second-box">
+			<img class="img1" src="img/map (4).png">	
+			<div class="second-box-text">
+			<a href="index.html">მთავარი</a>
+            <a href="#News">სიახლეები</a>
+            <a href="productadd.html">ობიექტის დამატება</a>
+            <a href="#AboutOus">ჩვენს შესახებ</a>
+            <a href="contact.html">კონტაქტი</a>
+            
+            
+        
+
+</header>
+
+    <!-- HEADER OVER -->
+    <!-- SLIDE SHOW START -->
+    
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="img/Screenshot_6.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img/Screenshot_7.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img/Screenshot_8.png" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center;display: none;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+    <!--SLIDE SHOW OVER  -->
+    <!--  search filter start -->
+    <div class="searchbox">
+  <div class="header3">
+    <h1>მოძებნეთ საიტზე</h1>
+    <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+  </div>
+
+  <div class="container">
+    <div class="profile">
+    <a href="https://facebook.com" class="name">გადამზიდი კომპანიები</span></a>
+</div>
+
+    
+<div class="container">
+    <div class="profile">
+    <a href="https://facebook.com" class="name">ტურისტული კომპანიები</span></a>
+</div>
+
+<div class="container">
+    <div class="profile">
+    <a href="https://facebook.com" class="name">გამაჯანსაღებელი ცენტრი</span></a>
+</div>
+
+<div class="container">
+    <div class="profile">
+    <a href="https://facebook.com" class="name">გასართობი</span>
+</div>
+
+<div class="container">
+    <div class="profile">
+    <a href="https://facebook.com" class="name">გადამზიდი კომპანიები</span></a>
+</div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function filter() {
+
+    var value,name,profile,i;
+
+    value = document.getElementById("value").value.toUpperCase();
+    profile = document.getElementsByClassName("profile");
+
+    for(i=0;i<profile.length;i++){
+      name = profile[i].getElementsByClassName("name");
+      if (name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
+        profile[i].style.display = "flex";
+      }else{
+        profile[i].style.display = "none";
+      }
+    }
+
+  }
+</script>
+  <!-- search filter over -->
+
+  </body>
+</html>
+   
