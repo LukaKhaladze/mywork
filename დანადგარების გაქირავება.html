@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="reset/reset.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <!-- fonts start -->
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/alk-rounded-mtav-med/css/alk-rounded-mtav-med.min.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-ingiri/css/bpg-ingiri.min.css">
+
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-glaho-traditional/css/bpg-glaho-traditional.min.css">
+
+
+ <!-- fonts over -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- location start -->
+  <link rel="stylesheet" type="text/css" href="productadd.html">
+  <link rel="stylesheet" type="text/css" href="searchfilter.html">
+  <!-- --------------------------------------------------------------------------- -->
+  <!-- კატეგორიის ლინკი დაწყება -->
+  <link rel="stylesheet" type="text/css" href="index.html">
+  <link rel="stylesheet" type="text/css" href="მომსახურება.html">
+  <link rel="stylesheet" type="text/css" href="ავეჯი, ინტერიერი, ჭურჭელი.html">
+  <link rel="stylesheet" type="text/css" href="ბიზნესი, დანადგრები.html">
+  <link rel="stylesheet" type="text/css" href="კომპიუტერები, აქსესუარები.html">
+  <link rel="stylesheet" type="text/css" href="ელექტრონიკა.html">
+  <link rel="stylesheet" type="text/css" href="საოჯახო ტექნიკა.html">
+  <link rel="stylesheet" type="text/css" href="ანტიკვარიანტი, კოლექცია.html">
+  <link rel="stylesheet" type="text/css" href="საბავშვო პროდუქცია.html">
+<link rel="stylesheet" type="text/css" href="აუდიო, ვიდეო, ფოტოტექნიკა.html">
+<link rel="stylesheet" type="text/css" href="წიგნები, საკანცელარიო ნივთები.html">
+  <link rel="stylesheet" type="text/css" href="ცხოველები და მცენარეები.html">
+  <link rel="stylesheet" type="text/css" href="ჰიგიენა და ქიმია.html">
+  <link rel="stylesheet" type="text/css" href="სამშენებლო, სარემონტო.html">
+  <link rel="stylesheet" type="text/css" href="იარაღები, ნადირობა, თევზაობა.html">
+  <link rel="stylesheet" type="text/css" href="მობილური, კავშირგაბმულობა.html">
+  <link rel="stylesheet" type="text/css" href="ტანსაცმელი და აქსესუარები.html">
+  <link rel="stylesheet" type="text/css" href="სპორტი, ტურიზმი, დასვენება.html">
+  <link rel="stylesheet" type="text/css" href="სასოფლო, სამეურენო.html">
+  <link rel="stylesheet" type="text/css" href="მუსიკალური ინსტრუმენტები.html">
+  <!-- კატეგორიის ლინკი დამთავრება -->
+  
+  <!-- locations over-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title>LISTS.GE</title>
+</head>
+<body>
+  <!-- HEADER START -->
+    <header class="header">
+  
+   <!-- SEARCH BUTTON START -->
+<div>
+  <div id="mySidenav" class="sidenav">
+
+  <a class="search-button" id="about" onclick="openNav()">სწრაფი ძებნა</a>
+
+  <!-- <a class="overlay2"  style=";cursor:pointer;;font-family: BPG Nino Medium Caps , sans-serif;" id="projects" onclick="openNav()"> ელ ფოსტა</a> -->
+
+  
+  
+</div>  
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    
+
+   <!--  search filter start -->
+    <div class="searchbox">
+  <div class="header3">
+    <h1>მოძებნეთ საიტზე</h1>
+    <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+  </div>
+
+  <div class="container">
+    <a href="https://facebook.com" class="name">გადამზიდი კომპანიები</span></a>
+</div>
+
+    
+<div class="container">
+    
+    <a href="https://facebook.com" class="name">ტურისტული კომპანიები</span></a>
+</div>
+
+<div class="container">
+    
+    <a href="https://facebook.com" class="name">გამაჯანსაღებელი ცენტრი</span></a>
+</div>
+
+<div class="container">
+   
+    <a href="https://facebook.com" class="name">გასართობი</span>
+</div>
+
+<div class="container">
+    
+    <a href="https://facebook.com" class="name">გადამზიდი კომპანიები</span></a>
+</div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function filter() {
+
+    var value,name,profile,i;
+
+    value = document.getElementById("value").value.toUpperCase();
+    profile = document.getElementsByClassName("container");
+
+    for(i=0;i<profile.length;i++){
+      name = profile[i].getElementsByClassName("name");
+      if (name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
+        profile[i].style.display = "flex";
+      }else{
+        profile[i].style.display = "none";
+      }
+    }
+
+  }
+</script>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+  <!-- search filter over -->
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</div>
+  </div>
+  <!-- SEARCH BUTTON OVER -->
+  <!-- HEADER START -->
+
+    <div class="second-box">
+      <img class="img1" src="img/map (4).png">  
+      <div class="second-box-text">
+     <a href="index.html">მთავარი</a>
+            <a href="productadd.html">განცხადების დამატება</a>
+            <a href="#News">რეკლამა</a>
+            <a href="#AboutOus">ჩვენს შესახებ</a>
+            <a href="contact.html">კონტაქტი</a>
+            
+            
+        
+
+</header>
+
+    <!-- HEADER OVER -->
+
+    <!-- MAIN IMAGE START -->
+   
+    <img class="main-image" src="img/tbi.jpg">
+
+    <!--MAIN IMAGE OVER  -->
+
+    <!-- MENU START -->
+    <div class="brokeline"></div>
+    
+       
+       
+
+      
+
+
+
+
+<div class="tab">
+
+
+       
+  <!-- PRODUCT LISTS BY LOCATION START-->
+    <!-- kategory start -->
+    <h2 class="text1">აირჩიეთ კატეგორია<img class="icon1" src="img/icon2.png"></h2>
+
+   <button  id="category-active" class="tablinks">ყველა კატეგორია</button>
+   
+    <div  class="dropdown1">
+    <a href="მომსახურება.html">
+    <button   class="tablinks">მომსახურება</button>
+  </a>
+  <div>
+    <ul>
+    <li><a href="დანადგარების გაქირავება.html">დანადგარების გაქირავება</a></li>
+    <li><a href="ბინების გაქირავება.html">მაკლერი</a></li>
+    <li><a href="ფოტო აპარატის გაქირავება.html">ფოტო აპარატის გაქირავება</a></li>
+    <li><a href="ავტომობილების გაქირავება.html">ავტომობილების გაქირავება</a></li>
+    <li><a href="ბინების გაქირავება.html">გაქირავება</a></li>
+  <li><a href="სატრანსპორტო მომსახურება.html">სატრანსპორტო მომსახურება</a></li>
+    <li><a href="ბინების გაქირავება.html">ავეჯის დამზადება</a></li>
+    <li><a href="ბინების გაქირავება.html">განათლება</a></li>
+    <li><a href="ბინების გაქირავება.html">იურიდიული მომსახურება</a></li>
+    <li><a href="ბინების გაქირავება.html">კომპიუტერული მომსახურება</a></li>
+    <li><a href="ბინების გაქირავება.html">რეკლამა, მარკეტინგი</a></li>
+    <li><a href="ბინების გაქირავება.html">სადღესასწაულო</a></li>
+    <li><a href="ბინების გაქირავება.html">სატრანსპორტო, ლოჯისტიკა</a></li>
+    <li><a href="ბინების გაქირავება.html">ტურიზმი, ვიზები</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="dropdown1">
+      <a href="ავეჯი, ინტერიერი, ჭურჭელი.html">
+    <button  class="tablinks">ავეჯი, ინტერიერი, ჭურჭელი</button>
+  </a>
+  <div>
+    
+    <ul>
+    <li><a href="ბინების გაქირავება.html">ჭურჭელი</a></li>
+    <li><a href="ბინების გაქირავება.html">დეკორატიული აქსესუარები</a></li>
+    <li><a href="ბინების გაქირავება.html">ეზოს ინვენტარი</a></li>
+    <li><a href="ბინების გაქირავება.html">კარადები, კომოდები</a></li>
+    <li><a href="ბინების გაქირავება.html">მაგიდები</a></li>
+    <li><a href="ბინების გაქირავება.html">საბავშვო ავეჯი</a></li>
+    <li><a href="ბინების გაქირავება.html">სამზარეულოები</a></li>
+    <li><a href="ბინების გაქირავება.html">საოფისე ავეჯი</a></li>
+    <li><a href="ბინების გაქირავება.html">სარკეები</a></li>
+    <li><a href="ბინების გაქირავება.html">სკამები</a></li>
+    <li><a href="ბინების გაქირავება.html">თეთრეული</a></li>
+    <li><a href="ბინების გაქირავება.html">განათება</a></li>
+    <li><a href="ბინების გაქირავება.html">ხალიჩები</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="dropdown1">
+  <a href="ბიზნესი, დანადგრები.html">
+  <button class="tablinks" onclick="openCity(event, 'ბიზნესი, დანადგრები')">ბიზნესი, დანადგრები</button>
+    </a>
+  <div>
+    <ul>
+    <li><a href="#">ავზები</a></li>
+    <li><a href="#">გასართობი აპარატები</a></li>
+    <li><a href="#">გენერატორები</a></li>
+    <li><a href="#">დაზგები და დანადგარები</a></li>
+    <li><a href="#">იყიდება ბიზნესი</a></li>
+    <li><a href="#">კომპრესორები</a></li>
+    <li><a href="#">კონტეინერები</a></li>
+    <li><a href="#">კოსმეტოლოტიური დანადგარები</a></li>
+    <li><a href="#">რეცხვის აპარატები</a></li>
+    <li><a href="#">მაცივრები</a></li>
+    <li><a href="#">სავაჭრო ინვენტარი</a></li>
+    <li><a href="#">სამრეწველო მასალები</a></li>
+    <li><a href="#">უსაფრთხოება</a></li>
+    <li><a href="#">სწრაფი ჩარიცხვის აპარატები</a></li>
+    <li><a href="#">საქსოვი მანქანები</a></li>
+    <li><a href="#">საცხოვრებელი ვაგონები</a></li>
+  </ul>
+  </div>
+</div>
+
+
+  
+  <div class="dropdown1">
+    <a href="კომპიუტერები აქსესუარები.html">
+   <button class="tablinks" onclick="openCity(event, 'კომპიუტერები აქსესუარები')">კომპიუტერები, აქსესუარები</button>
+ </a>
+    
+  <div>
+    <ul>
+    <li><a href="#">CD/DVD დისკები</a></li>
+    <li><a href="#">Desktop კომპიუტერები</a></li>
+    <li><a href="#">Laptop კომპიუტერები</a></li>
+    <li><a href="#">Laptop-ის ჩანთები</a></li>
+    <li><a href="#">USB Flash ბარათები</a></li>
+    <li><a href="#">USB გაჯეტები</a></li>
+    <li><a href="#">ვებკამერები</a></li>
+    <li><a href="#">კლავიატურები</a></li>
+    <li><a href="#">კომპიუტერის დინამიკები</a></li>
+    <li><a href="#">კომპიუტერის ნაწილები</a></li>
+    <li><a href="#">კომპიუტერული თამაშები</a></li>
+    <li><a href="#">კოპირების აპარატები</a></li>
+    <li><a href="#">ლიცენზირებული პროგრამები</a></li>
+    <li><a href="#">მაუსები</a></li>
+    <li><a href="#">მიკროფონები</a></li>
+    <li><a href="#">პლანშეტები</a></li>
+    <li><a href="#">პრინტერები</a></li>
+    <li><a href="#">პრინტერის კარტრიჯები</a></li>
+    <li><a href="#">პროექტორები</a></li>
+    <li><a href="#">სათამაშო კომპიუტერები</a></li>
+    <li><a href="#">სკანერები</a></li>
+    <li><a href="#">სხვა აქსესუარები</a></li>
+    <li><a href="#">ქსელის აპარატურა</a></li>
+    <li><a href="#">ყურსასმენები</a></li>
+    <li><a href="#">ჯოისტიკები</a></li>
+
+  </ul>
+  </div>
+</div>
+
+   
+  <div class="dropdown1">
+    <a href="ელექტრონიკა.html">
+   <button class="tablinks" onclick="openCity(event, 'ელექტრონიკა')">ელექტრონიკა</button>
+    
+    </a>
+  <div>
+    <ul>
+     <li><a href="#">აქტიური კომპონენტები</a></li>
+     <li><a href="#">დამხმარე ხელსაწყოები</a></li>
+     <li><a href="#">პასიური კომპონენტები</a></li>
+     
+
+
+  </ul>
+  </div>
+</div>
+
+<div class="dropdown1">
+  <a href="საოჯახო ტექნიკა.html">
+   <button class="tablinks" onclick="openCity(event, 'ტექნიკა')">საოჯახო ტექნიკა</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    
+    <li><a href="#">ბლენდერები</a></li>
+    <li><a href="#">აეროგრილები</a></li>
+    <li><a href="#">გაზქურები, ელექტროქურები</a></li>
+    <li><a href="#">გამათბობლები</a></li>
+    <li><a href="#">ეპილატორები</a></li>
+    <li><a href="#">ვენტილატორები</a></li>
+    <li><a href="#">თმის საჭრელები</a></li>
+    <li><a href="#">თმის უთო</a></li>
+    <li><a href="#">კონდინციონერები</a></li>
+    <li><a href="#">მასაჟორები</a></li>
+    <li><a href="#">მაცივრები</a></li>
+    <li><a href="#">მიკროტალღოვანი ღუმელები</a></li>
+    <li><a href="#">მუქსერები</a></li>
+    <li><a href="#">მტვერსასრუტები</a></li>
+    <li><a href="#">ნათურები</a></li>
+    <li><a href="#">ორთქლმსახარშები</a></li>
+    <li><a href="#">პურის საცხობი</a></li>
+    <li><a href="#">საკერავი მანქანები</a></li>
+    <li><a href="#">სამედიცინო ნივთები</a></li>
+    <li><a href="#">სამზარეულოს კომბაინები</a></li>
+    <li><a href="#">სარეცხის საშრობები</a></li>
+    <li><a href="#">სასმელი წყლის დოქები</a></li>
+    <li><a href="#">სასწორები</a></li>
+    <li><a href="#">სატელიტური ანტენები</a></li>
+    <li><a href="#">სენდვიჩერი</a></li>
+    <li><a href="#">ტოსტერები</a></li>
+    <li><a href="#">უთოები</a></li>
+    <li><a href="#">ფენები</a></li>
+    <li><a href="#">ტრიტუნციები</a></li>
+    <li><a href="#">ღუმელები</a></li>
+    <li><a href="#">ყავის და ჩაის აპარატები</a></li>
+    <li><a href="#">ჩაიდნები</a></li>
+    <li><a href="#">ცენტრალური გათბობის სისტემა</a></li>
+    <li><a href="#">წვენსაწურები</a></li>
+    <li><a href="#">წვერსაპარსები</a></li>
+    <li><a href="#">წყლის გამაცხელებელი</a></li>
+    <li><a href="#">ჭრა-კერვის ხელსაწყოები</a></li>
+    <li><a href="#">ჭურჭლის სარეცხი მანქანები</a></li>
+    <li><a href="#">ხორცის საჭრელები</a></li>
+    <li><a href="#">ჰაერგამწოვები</a></li>
+    <li><a href="#">სხვა</a></li>
+
+
+  </ul>
+  </div>
+  </div>
+
+  
+  
+  <div class="dropdown1">
+    <a href="ანტიკვარიანტი, კოლექცია.html">
+  <button class="tablinks" onclick="openCity(event, 'ანტიკვარიანტი, კოლექცია')">ანტიკვარიანტი, კოლექცია</button>
+    </a>
+  <div>
+    <ul>
+    <li><a href="#">ავეჯი</a></li>
+    <li><a href="#">არქეილიგიური</a></li>
+    <li><a href="#">იარაღები</a></li>
+    <li><a href="#">მარკები</a></li>
+    <li><a href="#">მედლები, სამკერდე ნიშნები</a></li>
+    <li><a href="#">მოდელები</a></li>
+    <li><a href="#">მონეტები, ბანკოტები</a></li>
+    <li><a href="#">ნახატები</a></li>
+    <li><a href="#">საათები</a></li>
+    <li><a href="#">სამკაულები</a></li>
+    <li><a href="#">საოჯახო ნივთები</a></li>
+    <li><a href="#">სასმელები</a></li>
+    <li><a href="#">საყვავილეები, ვაზები</a></li>
+    <li><a href="#">სკულპტურა</a></li>
+    <li><a href="#">ფაიფური, შუშა</a></li>
+    <li><a href="#">ფერწერა</a></li>
+    <li><a href="#">ციფრული ხელოვნება</a></li>
+    <li><a href="#">წიგნები</a></li>
+    <li><a href="#">ჭურჭელი</a></li>
+    <li><a href="#">ხალიჩები</a></li>
+  </ul>
+  </div>
+</div>
+
+     <div class="dropdown1">
+      <a href="საბავშვო პროდუქცია.html">
+   <button class="tablinks" onclick="openCity(event, 'საბავშვო პროდუქცია')">საბავშვო პროდუქცია</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">აბაზანა, მოვლა</a></li>
+    <li><a href="#">ბავშვთა უსაფრთოება</a></li>
+    <li><a href="#">საბავშვო ეტლები, სავარძლები</a></li>
+    <li><a href="#">დრონები</a></li>
+    <li><a href="#">კვება</a></li>
+    <li><a href="#">საბავშვო საწოლი და აქსესუარები</a></li>
+    <li><a href="#">სათამაშოები</a></li> 
+  </ul>
+
+  </div>
+</div>
+
+
+
+<div class="dropdown1">
+  <a href="აუდიო, ვიდეო, ფოტოტექნიკა.html">
+   <button class="tablinks" onclick="openCity(event, 'აუდიო, ვიდეო, ფოტოტექნიკა')">აუდიო, ვიდეო, ფოტოტექნიკა</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">DVD და ვიდეოტექნიკა</a></li>
+    <li><a href="#">MP3 ფლეერები</a></li>
+    <li><a href="#">ავტომობილების რეგისტრატორი</a></li>
+    <li><a href="#">აკუმლატორები და დამტენები</a></li>
+    <li><a href="#">ბარათის წამკითხველები</a></li>
+    <li><a href="#">დინამიკები</a></li>
+    <li><a href="#">ვიდეოკამერები</a></li>
+    <li><a href="#">ვიდეოტექნიკის აქსესუარები</a></li>
+    <li><a href="#">კასეტები</a></li>
+    <li><a href="#">მაგნიტაფონები</a></li>
+    <li><a href="#">მესიერების ბარათები</a></li>
+    <li><a href="#">ობიექტივები</a></li>
+    <li><a href="#">ტელევიზორები</a></li>
+    <li><a href="#">ტვ მოწყობილობები და აქსესუარები</a></li>
+    <li><a href="#">ფოტოკამერები</a></li>
+    <li><a href="#">ყურსასმენები</a></li>
+    <li><a href="#">ციფრული კამერების აქსესუარები</a></li>
+  </ul>
+  </div>
+  </div>
+
+
+  <div class="dropdown1">
+    <a href="სუვენირები, ხელნაკეთი ნივთები.html">
+   <button class="tablinks" onclick="openCity(event, 'სუვენირები, ხელნაკეთი ნივთები')">სუვენირები, ხელნაკეთი ნივთები</button>
+</a>    
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">სტიკერები</a></li>
+    <li><a href="#">ხელნაკეთი ნაწარმი</a></li>
+    <li><a href="#">სუვენირები</a></li>
+    <li><a href="#">სუვენირები</a></li>
+    <li><a href="#">ჩილიმი</a></li>
+  </ul>
+  </div>
+  </div>
+
+  
+     <div class="dropdown1">
+      <a href="წიგნები, საკანცელარიო ნივთები.html">
+   <button class="tablinks" onclick="openCity(event, 'წიგნები, საკანცელარიო ნივთები')">წიგნები, საკანცელარიო ნივთები</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">ვიდეო</a></li>
+    <li><a href="#">მუსიკა</a></li>
+    <li><a href="#">ნოტები</a></li>
+    <li><a href="#">საკანცელარიო</a></li>
+    <li><a href="#">სამხატვრო და არქიტექტურული</a></li>
+    <li><a href="#">წიგნები</a></li>
+  </ul>
+  </div>
+</div>
+
+<div class="dropdown1">
+  <a href="ცხოველები და მცენარეები.html">
+   <button class="tablinks" onclick="openCity(event, 'ცხოველები და მცენარეები')">ცხოველები და მცენარეები</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">ძაღლები</a></li>
+    <li><a href="#">კატები</a></li>
+    <li><a href="#">თევზები</a></li>
+    <li><a href="#">გავაჩუქებ/ვიჩუქებ</a></li>
+    <li><a href="#">დაიკარგა/ნაპოვნია</a></li>
+    <li><a href="#">ეგზოტიკური ცხოველები</a></li>
+    <li><a href="#">თევზების აქსესუარები</a></li>
+    <li><a href="#">კურდღლები</a></li>
+    <li><a href="#">მღრღნელები</a></li>
+    <li><a href="#">მცენარეები</a></li>
+    <li><a href="#">ფრინველები</a></li>
+    <li><a href="#">ფუტკარი და აქსესუარბეი</a></li>
+    <li><a href="#">ჩლიქოსანი ცხოველები</a></li>
+    <li><a href="#">ცხოველების აქსესუარები</a></li>
+    <li><a href="#">ცხოველების კვება</a></li>
+  </ul>
+  </div>
+</div>
+
+
+<div class="dropdown1">
+
+  <a href="ჰიგიენა და ქიმია.html">
+   <button class="tablinks" onclick="openCity(event, 'ჰიგიენა და ქიმია')">ჰიგიენა და ქიმია</button></a>
+    
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">ავეჯის საწმენდი საშუალებები</a></li>
+    <li><a href="#">ელექტრო ტექნიკის საწმენდი</a></li>
+    <li><a href="#">იატაკის საწმენდი საშუალება</a></li>
+    <li><a href="#">მათეთრებელი</a></li>
+    <li><a href="#">მილის საწმენდი სითხე</a></li>
+    <li><a href="#">ნაგვის პარკები</a></li>
+    <li><a href="#">სადენზიფექციო ხსნარები</a></li>
+    <li><a href="#">საპონი</a></li>
+    <li><a href="#">საწმენდი საშუალებები</a></li>
+    <li><a href="#">შუშის საწმენდი სითხე</a></li>
+    <li><a href="#">ჭურჭლის სარეცხი საშუალება</a></li>
+    <li><a href="#">ჰაერის არომატიზატორი</a></li>
+
+  </ul>
+  </div>
+</div>
+
+  <div class="dropdown1">
+    <a href="სამშენებლო, სარემონტო.html">
+   <button class="tablinks">სამშენებლო, სარემონტო</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">ბუხარი</a></li>
+    <li><a href="#">გათბობა, კონდიცირება</a></li>
+    <li><a href="#">გენერატორები</a></li>
+    <li><a href="#">ელექტრო გაყვანილობა</a></li>
+    <li><a href="#">ელექტრო/პნევმატური მოწყობილობა</a></li>
+    <li><a href="#">ვენტილაცია</a></li>
+    <li><a href="#">კარ-ფანჯარა, ჟალუზები</a></li>
+    <li><a href="#">ლითონის მასალები</a></li>
+    <li><a href="#">მექანიკური ინსტრუმენტები</a></li>
+    <li><a href="#">მოსაპირკეთებელი მასალები</a></li>
+    <li><a href="#">საკეტები, ბოქლომები</a></li>
+    <li><a href="#">სამშენებლო დანადგარები</a></li>
+    <li><a href="#">სამშენებლო მასალები</a></li>
+    <li><a href="#">სანტექნიკა</a></li>
+    <li><a href="#">საღებავები, ლაქები</a></li>
+    <li><a href="#">სახარჯი ინსტრუმენტები</a></li>
+    <li><a href="#">ხის მასალები</a></li>
+  </ul>
+  </div>
+</div>
+
+
+<div class="dropdown1">
+  <a href="იარაღები, ნადირობა, თევზაობა.html">
+   <button class="tablinks">იარაღები, ნადირობა, თევზაობა</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">გაზის იარაღი</a></li>
+    <li><a href="#">თავდაცვის საშალებები</a></li>
+    <li><a href="#">იარაღის ნაწილები</a></li>
+    <li><a href="#">პნევმატური იარაღი</a></li>
+    <li><a href="#">პნევმატური იარაღის ვაზნა</a></li>
+    <li><a href="#">სათევზაო ინვენტარი</a></li>
+    <li><a href="#">სანადირო ინვენტარი</a></li>
+    <li><a href="#">სასიგნალო</a></li>
+    <li><a href="#">ცეცხლსასროლი იარაღი</a></li>
+    <li><a href="#">ცივი იარაღი</a></li>
+
+  </div>
+</div>
+
+
+<div class="dropdown1">
+  <a href="მობილური, კავშირგაბმულობა.html">
+   <button class="tablinks">მობილური, კავშირგაბმულობა</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">Bluetooth გარნიტურები</a></li>
+    <li><a href="#">GPS ნავიგატორები</a></li>
+    <li><a href="#">აქსესუარები და ნაწილები</a></li>
+    <li><a href="#">მინი ატს</a></li>
+    <li><a href="#">მობილური ტელეფონები</a></li>
+    <li><a href="#">რაციები</a></li>
+    <li><a href="#">სერვისი</a></li>
+    <li><a href="#">სმარტ საათები</a></li>
+    <li><a href="#">სხვა მოწყობილობები</a></li>
+    <li><a href="#">ხაზის ტელეფონები</a></li>
+    <li><a href="#">IP ტელეფონები</a></li>
+    <li><a href="#">მობილურის ნომრები</a></li>
+
+  </div>
+</div>
+
+
+
+
+<div class="dropdown1">
+  <a href="ტანსაცმელი და აქსესუარები.html">
+   <button class="tablinks">ტანსაცმელი და აქსესუარები</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">აქსესუარები</a></li>
+    <li><a href="#">ბიჭის ტანსაცმელი</a></li>
+    <li><a href="#">კაცის ტანსაცმელი</a></li>
+    <li><a href="#">გოგოს ტანსაცმელი</a></li>
+    <li><a href="#">ნაციონალური ტანსაცმელი</a></li>
+    <li><a href="#">სათვალეები</a></li>
+    <li><a href="#">სპეცტანსაცმელი, სპორტული</a></li>
+    <li><a href="#">ფეხსაცმელი</a></li>
+    <li><a href="#">ქალის ტანსაცმელი</a></li>
+    <li><a href="#">ჩანთები</a></li>
+    <li><a href="#">ჩვილის ტანსაცმელი</a></li>
+    <li><a href="#">სხვა</a></li>
+    
+
+  </div>
+</div>
+
+
+
+
+<div class="dropdown1">
+  <a href="სპორტი, ტურიზმი, დასვენება.html">
+   <button class="tablinks">სპორტი, ტურიზმი, დასვენება</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">ალპინიზმი</a></li>
+    <li><a href="#">აუზები და აუზის აქსესუარები</a></li>
+    <li><a href="#">ბურთები</a></li>
+    <li><a href="#">ველოსიპედები</a></li>
+    <li><a href="#">ველოსიპედის ნაწილები</a></li>
+    <li><a href="#">ზამთრის სპორტი</a></li>
+    <li><a href="#">მოტო აქსესუარები</a></li>
+    <li><a href="#">როლიკები</a></li>
+    <li><a href="#">სავარჯიშო მოწყობილოებები</a></li>
+    <li><a href="#">სამაგიდო თამაშები</a></li>
+    <li><a href="#">საჰაერო სპორტი</a></li>
+    <li><a href="#">სკეიდბორდი</a></li>
+    <li><a href="#">სპორტული ინვენტარი</a></li>
+    <li><a href="#">ჩანთები, ჩემოდნები</a></li>
+    <li><a href="#">ცხენოსნობა</a></li>
+    <li><a href="#">წყლის სპორტი</a></li>
+    <li><a href="#">ჰოვერბორდი</a></li>
+    <li><a href="#">ბილეთები</a></li>
+
+  </div>
+</div>
+
+
+
+<div class="dropdown1">
+  <a href="სასოფლო, სამეურენო.html">
+   <button class="tablinks">სასოფლო, სამეურენო</button>
+    </a>
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">ალკოჰოლური სასმელები</a></li>
+    <li><a href="#">ინსტრუმენტები</a></li>
+    <li><a href="#">კვების პროდუქტები</a></li>
+    <li><a href="#">ნერგები</a></li>
+    <li><a href="#">პესტიციდები და სასუქები</a></li>
+    <li><a href="#">სათავსო ნაგებობები</a></li>
+    <li><a href="#">სათესლე მასალა</a></li>
+    <li><a href="#">საკონდიტრო მასალები</a></li>
+    <li><a href="#">საწვავი მასალა</a></li>
+    <li><a href="#">უალკოჰოლო სასმელები</a></li>
+    <li><a href="#">ცხოველთა საკვები</a></li>
+    
+
+  </div>
+</div>
+
+
+
+
+<div class="dropdown1">
+  <a href="მუსიკალური ინსტრუმენტები.html">
+   <button  class="tablinks">მუსიკალური ინსტრუმენტები</button>
+ </a>
+    
+  <div class="sub-category">
+    <ul>
+    <li><a href="#">აქსესუარები</a></li>
+    <li><a href="#">დასარტყამი, პერკუსია</a></li>
+    <li><a href="#">კლავიშიანი ინსტრუმენტები</a></li>
+    <li><a href="#">მუსიკალური აპარატურა</a></li>
+    <li><a href="#">სასულე ინსტრუმენტები</a></li>
+    <li><a href="#">სიმიანი ინსტრუმენტები</a></li>
+    <li><a href="#">ხემიანი ინსტრუმენტები</a></li>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<nav>
+  <div class="main-products">
+<div class="tabcontent">
+  <!-- category over -->
+<!-- !!!  Product SECTION START !!! -->
+<!-- !!! SUPER VIP SECTION START !!! -->
+
+
+
+
+
+
+
+
+<!-- SUPER VIP SECTION OVER -->
+
+<!-- VIP + SECTION START -->
+<a href="1101.index">
+<div class="cont">
+<!-- მთავარი სურათი --><img class="locationimage" src="img/1101=1.png">
+
+<!-- სათაური/არაუმეტეს 7 სიტყვისა--><h1 class="text77">წისქვილი ახალი, კომბინირებული საკვების დასამზადებელი  </h1>
+<div class="text27">
+<hr class="hr-deco">
+<!-- ღირებულება --><p class="small-description-text">600 ლარი</p>
+
+<!-- ტიპი --><p class="small-description-text55">ტიპი : მეორადი</p>
+
+<!-- საკონტაქტო ნომერი --><p class="small-description-text555">საკონტაქტო ნომერი : 597-75-96-38</p>
+
+<div class="vipplus-box">
+<!-- VIP - სტატუსი --> <h1>VIP +</h1>
+</div>
+
+
+  </div>
+  <div class="vl"></div>
+   <div class="box2">
+<!-- პროდუქტის ნომერი --><p class="small-description-text77">პროდუქტი: N-1101</p>    
+    <br>
+
+<!-- თარიღი --><p class="small-description-text77">თარიღი: 20/02/2018</p>
+    <br>
+
+<!-- მისამართი --><p class="small-description-text77">მისამართი: გორი</p>    
+
+
+   </div>
+ </div>
+</a>
+
+
+
+
+
+<!-- VIP + SECTION OVER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- VIP SECTION START -->
+
+
+
+
+
+
+
+
+ <!-- VIP SECTION OVER -->
+ <!-- STANDART SECTION START -->
+
+
+
+
+
+
+
+<!-- STANDART SECTION OVER -->
+
+
+</div>
+</div>
+</nav>
+
+
+
+
+ <!-- TOP BUTTON START -->
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/top.png"></button>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+ <!-- TOP BUTTON OVER -->
+
+ <!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 10473202;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/10473202/">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
+</noscript>
+<!-- advert box start -->
+  <div class="advert-box2">
+    <div style="width: 250px;height: 300px;border:5px solid #3399ff;" class="advert-box1"><h1 style="color: #fff;line-height: 80px;">სარეკლამო ადგილი<br>250x300</h1>
+    </div>
+    <div style="width: 250px;height: 200px;border:5px solid #3399ff;" class="advert-bo"><h1 style="color: #fff;line-height: 55px;">სარეკლამო ადგილი<br>250x200</h1>
+    </div>
+    <div style="width: 250px;height: 300px;border:5px solid #3399ff;" class="advrt-bo"><h1 style="color: #fff;line-height: 80px;">სარეკლამო ადგილი<br>250x200</h1>
+  
+    </div>
+
+
+
+
+ 
+ </div>
+
+
+ <!-- advert box over -->
+</span>
+
+</header>
+  
+  <!-- start of liveChat code -->
+<!-- End of LiveChat code -->
+<!-- start footer -->
+<div class="footer">
+
+
+
+
+  </div>
+
+<!-- over footer -->
+
+</body>
+</html>

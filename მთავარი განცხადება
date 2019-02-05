@@ -1,0 +1,29 @@
+<a href=".index">
+<div class="cont">
+<!-- მთავარი სურათი --><img class="locationimage" src="img/img3.jpg">
+
+<!-- სათაური/არაუმეტეს 7 სიტყვისა--><h1 class="text77">*******</h1>
+
+<!-- ღირებულება --><p class="small-description-text">**** ლარი</p>
+
+<!-- ტიპი / მეორადი / ახალი --><p class="small-description-text55">ტიპი : *****</p>
+
+<!-- საკონტაქტო ნომერი --><p class="small-description-text555">საკონტაქტო ნომერი : ***-**-**-**</p>
+<div class="vipplus-box">
+
+<!-- SUPER VIP / VIP+ / VIP  --> <h1>***</h1>
+
+  </div>
+  <div class="vl"></div>
+   <div class="box2">
+<!-- პროდუქტის ნომერი --><p class="small-description-text77">პროდუქტი: N-11**</p>    
+    <br>
+
+<!-- თარიღი --><p class="small-description-text77">თარიღი: **/02/2018</p>
+    <br>
+
+<!-- მისამართი --><p class="small-description-text77">მისამართი: გორი</p>    
+
+   </div>
+ </div>
+</a> 
