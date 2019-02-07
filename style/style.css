@@ -1166,6 +1166,7 @@ img {
   content: "";
   display: table;
   clear: both;
+  
 }
 
 /* Six columns side by side */
@@ -1185,6 +1186,7 @@ img {
 }
 .width1{
   width: 70%;
+
 }
 .contact-buttons{
   font-size: 20px;
@@ -1227,6 +1229,10 @@ img {
   text-align: left;
   font-family: "Arial GEO Bold", sans-serif;
 
+ }
+ .product-descr h2{
+  font-size: 20px;
+  margin-left: -450px;
  }
 /*product show over*/
 /*advert box start*/
