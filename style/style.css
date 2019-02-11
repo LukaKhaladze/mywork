@@ -5,17 +5,17 @@
 }
 
 .second-box{
-	display: inline-flex;
-	background-color:#3399ff;
-	opacity: 0.8;
-	width: 100%;
+  display: inline-flex;
+  background-color:#3399ff;
+  opacity: 0.8;
+  width: 100%;
   float: left;
-	height: 92px;
+  height: 92px;
 
 
 }
 .second-box a{
-	margin-left: 20px;
+  margin-left: 20px;
     color: #FFFFFF;
     font-size: 17px;
     text-decoration: none;
@@ -33,7 +33,7 @@
 }
 
 .second-box-text{
-	margin-left: 200px;
+  margin-left: 200px;
     
     margin-top: 40px;
   font-family: "ALK Rounded Mtav Med", sans-serif;
@@ -54,7 +54,7 @@
 
 }
 .img1{
-	height: 70px;
+  height: 70px;
     margin-left: 150px;
     width: 70px;
     margin-top: 10px;
@@ -224,19 +224,19 @@ body {font-family: "Lato", sans-serif;}
       position: relative;
     text-align: center;
     color: black;
-    margin-top: 30px;
+    margin-top: 200px;
     border-radius: 10px;
 
 }
 
 
 .brokeline{
-	background-color: #3399ff;
-	width: 100%;
-	height: 30px;
+  background-color: #3399ff;
+  width: 100%;
+  height: 30px;
 }
 .text1{
-	background-color: #3399ff;
+  background-color: #3399ff;
     color: white;
     width: 350px;
     border: none;
@@ -405,29 +405,29 @@ margin-left: -180px;
   border:2px solid #3399ff;
 }
 .subcategory{
-	padding-top: 300px;
+  padding-top: 300px;
 }
 /*sub categories over*/
 /*MENU OVER*/
 /*PRODUCT LISTS BY LOCATION START*/
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 nav{
-	width: 100%
-	height:60px;
-	background-color: #fff;
+  width: 100%
+  height:60px;
+  background-color: #fff;
 }
 nav p{
-	color: #222;
-	font-size: 24px;
-	line-height: 55px;
-	float: left;
-	padding: 0px 20px;
+  color: #222;
+  font-size: 24px;
+  line-height: 55px;
+  float: left;
+  padding: 0px 20px;
 }
 nav ul {
-	float: left;
+  float: left;
     margin-left: 40px;
     background-color: #3399ff;
     width: 300px;
@@ -442,41 +442,41 @@ nav ul {
 
 }
 nav ul li {
-	float: left;
-	list-style: none;
-	position: relative;
+  float: left;
+  list-style: none;
+  position: relative;
 }
 nav ul li a{
    color: white;
-	font-size: 20px;
-	display: block;
-	padding:  21px 14px;
-	text-decoration: none;
-	width: 300px;
+  font-size: 20px;
+  display: block;
+  padding:  21px 14px;
+  text-decoration: none;
+  width: 300px;
   font-family: "BPG Mrgvlovani", sans-serif;
-	border: 2px solid #333;
+  border: 2px solid #333;
 }
 nav ul li a:hover{
-	background-color: #fff;
-	color: #3399ff;
+  background-color: #fff;
+  color: #3399ff;
   text-decoration: none;
   text-align: center;
   font-family: "BPG Mrgvlovani", sans-serif;
 }
 nav ul li a:active{
-	
-	color: #3399ff;
+  
+  color: #3399ff;
   text-align: center;
   font-family: "BPG Mrgvlovani", sans-serif;
 
 }
 
 .text6{
-	font-size: 30px;
-	text-align: center;
-	color: #fff;
-	margin-top: 0px;
-	margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 nav ul li ul{
    display: none;
@@ -491,36 +491,36 @@ nav ul li:hover ul {
 
 }
 nav ul li ul li {
-	width: 180px;
+  width: 180px;
 }
 nav ul li ul li a{
-	padding: 8px 14px;
+  padding: 8px 14px;
 }
 nav ul li ul li a:hover{
-	background-color: #fff;
-	color: #3399ff;
+  background-color: #fff;
+  color: #3399ff;
   text-decoration: none;
-	
+  
 }
 /*PRODUCT LISTS BY LOCATION OVER*/
 /*PRODUCT LISTS START*/
 .tabcontent2{
-	display: inline-grid;
+  display: inline-grid;
 }
 .imgofproduct{
-	width:900px;
-	margin-left: 370px;
+  width:900px;
+  margin-left: 370px;
 
 }
 .backgroundofproduct{
-	position: absolute;
+  position: absolute;
   text-align: center;
   color: black;
 
   margin-top: 30px;
 }
 .textofproduct{
-	 color: white;
+   color: white;
    background-color: #3399ff;
    border-radius: 20px;
    font-size: 50px;
@@ -535,7 +535,7 @@ nav ul li ul li a:hover{
 
 }
 .textofproduct1{
-	color: white;
+  color: white;
    background-color: #3399ff;
    border-radius: 20px;
    font-size: 50px;
